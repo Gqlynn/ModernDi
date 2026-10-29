@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>现代梗语词典 · 验证</title>
+  <meta name="theme-color" content="#8E1616">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" type="image/png" href="9/assets/img/favicon.png">
+  <link rel="preload" href="9/assets/img/title-font.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="gate/assets/gate-red-bg.jpg" as="image">
+  <link rel="stylesheet" href="gate/css/gate.css">
+</head>
+<body class="gate-open">
+  <section class="gate" aria-labelledby="gate-title">
+    <div class="gate-inner">
+      <div class="gate-brand" aria-hidden="true">
+        <p class="gate-brand-title">现代梗语词典</p>
+        <p class="gate-brand-sub">东营市胜利第一中学高2020级九班 GYX 编</p>
+      </div>
+
+      <main class="gate-card">
+        <form class="gate-form" novalidate>
+          <h1 class="gate-title" id="gate-title">验证身份</h1>
+
+          <label class="gate-field">
+            <span class="gate-label">姓名</span>
+            <input class="gate-input" name="name" type="text" autocomplete="name"
+              maxlength="12" required>
+          </label>
+
+          <label class="gate-field">
+            <span class="gate-label">学号</span>
+            <input class="gate-input" name="student_id" type="text" inputmode="numeric"
+              autocomplete="off" maxlength="8" required>
+          </label>
+
+          <p class="gate-error" data-gate-error role="alert" hidden></p>
+
+          <button class="gate-submit" type="submit">进入词典</button>
+        </form>
+      </main>
+    </div>
+  </section>
+
+  <footer class="gate-quote" aria-label="卷首引语">
+    <p class="gate-quote-cn">还有更多的故事等待我们去亲自书写</p>
+  </footer>
+
+  <script src="gate/js/gate-data.js"></script>
+  <script type="module" src="gate/js/gate.js"></script>
+</body>
+</html>
